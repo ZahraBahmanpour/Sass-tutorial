@@ -2,11 +2,11 @@ const { src, dest, watch, series } = require("gulp");
 const sass = require("gulp-sass")(require("sass"));
 
 function buildStyles() {
-  return src("*.scss").pipe(sass()).pipe(dest("styles"));
+  return src("nik/**/*.scss").pipe(sass()).pipe(dest("styles"));
 }
 
 function watchTask() {
-  watch(["*.scss"], buildStyles);
+  watch(["nik/**/*.scss"], buildStyles);
 }
 
 exports.default = series(buildStyles, watchTask);
