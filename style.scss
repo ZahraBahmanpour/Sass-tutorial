@@ -27,8 +27,25 @@ img {
   max-width: 100%;
 }
 
+// colors
+$primary: #326dee;
+$secondary: #1ac888;
+$error: #d32752;
+$info: #f6c31c;
+
+// spacing
+$base-padding: 0.75rem;
+$base-margin: 0.75rem;
+
+// borders
+$base-border-thickness: 1px;
+$base-border-radius: 20px;
+
 h1 {
-  a {
-    color: red;
-  }
+  color: $primary;
+  margin: $base-margin;
+}
+
+a {
+  color: $secondary;
 }
